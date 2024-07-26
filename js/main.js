@@ -14,6 +14,11 @@ AOS.init({
 
 });
 
-document.querySelector('.shadow-effect').addEventListener('touchstart', function() {
-  this.classList.toggle('hover');
+
+$(".mobile").bind("touchstart", function(){
+  $(this).addClass("active");
+});
+
+$(".mobile").bind("touchend", function(){
+  $(this).removeClass("active");
 });
