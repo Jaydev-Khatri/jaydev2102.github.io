@@ -13,12 +13,3 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
-
-
-$(".mobile").bind("touchstart", function(){
-  $(this).addClass("active");
-});
-
-$(".mobile").bind("touchend", function(){
-  $(this).removeClass("active");
-});
