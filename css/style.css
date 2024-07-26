@@ -14,7 +14,6 @@
 body {
     background-color: var(--color-base2);
     color: var(--color-body);
-
     font-family: var(--font-base);
 }
 
@@ -50,7 +49,7 @@ img {
     background-color: var(--color-base);
 }
 
-.full-height {
+.new_height-class {
     min-height: 100vh;
     height: 100%;
     display: flex;
@@ -61,33 +60,24 @@ img {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-/* .shadow-effect {
+.shadow-box {
     transition: all 0.8s ease;
 }
 
-.shadow-effect:hover {
-    box-shadow: 6px 6px 0 0 var(--color-brand),
-        -6px 6px 0 0 var(--color-brand);
-} */
-
-.shadow-effect {
-    transition: all 0.8s ease;
-}
-
-.shadow-effect:hover {
+.shadow-box:hover {
     box-shadow: 0 10px 15px -5px var(--color-brand),
         3px 3px 0 0 var(--color-brand),
         -3px 3px 0 0 var(--color-brand);
 }
 
-.shadow-effect.active,
-.shadow-effect:hover {
+.shadow-box.active,
+.shadow-box:hover {
     box-shadow: 0 10px 15px -5px var(--color-brand),
         3px 3px 0 0 var(--color-brand),
         -3px 3px 0 0 var(--color-brand);
 }
 
-.iconbox {
+.icon-holder {
     width: 60px;
     height: 60px;
     display: flex;
@@ -98,7 +88,6 @@ img {
     color: var(--color-base);
 }
 
-/* NAVBAR */
 .navbar {
     background-color: var(--color-base);
 }
@@ -132,37 +121,35 @@ img {
         border: 8px solid var(--color-brand);
     }
 
-    /* CONTENT WRAPPER */
-    #content-wrapper {
+    #content-box {
         padding-left: var(--sidbar-width);
     }
 }
 
-/* BTN */
 .btn {
     padding: 12px 28px;
     font-weight: 700;
 }
 
-.btn-brand {
+.featured-btn {
     background-color: var(--color-brand);
     border-color: var(--color-brand);
     color: var(--color-base);
 }
 
-.btn-brand:hover,
-.btn-brand:focus {
+.featured-btn:hover,
+.featured-btn:focus {
     background-color: var(--color-brand2);
     color: var(--color-base);
     border-color: var(--color-brand2);
 }
 
-.link-custom {
+.styled-link {
     font-weight: 700;
     position: relative;
 }
 
-.link-custom::after {
+.styled-link::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -174,164 +161,131 @@ img {
     transition: .3s all ease-out;
 }
 
-.link-custom:hover::after {
+.styled-link:hover::after {
     transform: scale(1);
 }
 
-.link-custom:hover::after,
+.styled-link:hover::after,
 .linkCustomsactive::after {
     transform: scale(1);
 }
 
-/* CARD */
-.card-custom .card-custom-image {
-    overflow: hidden;
-}
-
-.card-custom .card-custom-image img {
-    transition: all 0.4s ease;
-}
-
-.card-custom:hover .card-custom-image img {
-    transform: scale(1.1);
-}
-
-/* CONTACT */
-#contact .form-control {
+#contact-info .form-control {
     background-color: var(--color-base);
     border-color: var(--color-base);
     color: var(--color-body);
 }
 
-#contact .form-control:focus {
+#contact-info .form-control:focus {
     border-color: var(--color-brand);
     box-shadow: none;
 }
 
-#contact .form-control::placeholder {
+#contact-info .form-control::placeholder {
     color: var(--color-body);
 }
 
-#contact input.form-control {
+#contact-info input.form-control {
     height: 44px;
 }
 
-/* SOCIAL ICONS */
-/* .social-icons {
 
-} */
 
-.social-icons a {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-base);
-    border-radius: 100px;
-    font-size: 24px;
-}
-
-.service {
+.service-item {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 .section {
     padding: 60px 0;
 }
 
-/* .container .row {
-    margin-bottom: 30px;
-} */
-
-.service p {
+.service-item p {
     margin-bottom: 10px;
 }
 
-#animated-heading {
+#animate-heading {
     user-select: none;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 
-.word {
+.word-animated {
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
 }
 
-.word:nth-child(1) {
+.word-animated:nth-child(1) {
     animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(2) {
+.word-animated:nth-child(2) {
     animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(3) {
+.word-animated:nth-child(3) {
     animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(4) {
+.word-animated:nth-child(4) {
     animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(5) {
+.word-animated:nth-child(5) {
     animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(6) {
+.word-animated:nth-child(6) {
     animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(7) {
+.word-animated:nth-child(7) {
     animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(8) {
+.word-animated:nth-child(8) {
     animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(9) {
+.word-animated:nth-child(9) {
     animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(10) {
+.word-animated:nth-child(10) {
     animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(11) {
+.word-animated:nth-child(11) {
     animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(12) {
+.word-animated:nth-child(12) {
     animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(13) {
+.word-animated:nth-child(13) {
     animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(14) {
+.word-animated:nth-child(14) {
     animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(15) {
+.word-animated:nth-child(15) {
     animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(16) {
+.word-animated:nth-child(16) {
     animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(17) {
+.word-animated:nth-child(17) {
     animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.word:nth-child(18) {
+.word-animated:nth-child(18) {
     animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
