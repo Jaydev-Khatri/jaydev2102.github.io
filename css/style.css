@@ -80,14 +80,12 @@ img {
         -3px 3px 0 0 var(--color-brand);
 }
 
-/* Mobile styles */
-@media (hover: none) and (pointer: coarse) {
+@media (hover: hover) {
     .shadow-effect:hover {
         box-shadow: 0 10px 15px -5px var(--color-brand),
             3px 3px 0 0 var(--color-brand),
             -3px 3px 0 0 var(--color-brand);
     }
-
 }
 
 .iconbox {
