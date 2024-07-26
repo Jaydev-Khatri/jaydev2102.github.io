@@ -1,19 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('.shadow-effect');
+  const shadowEffects = document.querySelectorAll('.shadow-effect');
 
-  elements.forEach(element => {
+  shadowEffects.forEach(shadowEffect => {
       // For touch devices, mimic hover effect
-      element.addEventListener('touchstart', () => {
-          element.classList.add('active');
+      shadowEffect.addEventListener('touchstart', () => {
+          shadowEffect.classList.add('active');
       });
 
-      element.addEventListener('touchend', () => {
-          element.classList.remove('active');
+      shadowEffect.addEventListener('touchend', () => {
+          shadowEffect.classList.remove('active');
       });
 
-      // Optional: Remove the effect if touch moves away from the element
-      element.addEventListener('touchmove', () => {
-          element.classList.remove('active');
+      shadowEffect.addEventListener('touchmove', () => {
+          shadowEffect.classList.remove('active');
+      });
+  });
+
+  const linkCustoms = document.querySelectorAll('.link-custom');
+
+  linkCustoms.forEach(linkCustom => {
+      linkCustom.addEventListener('touchstart', () => {
+          linkCustom.classList.add('linkCustomsactive');
+      });
+
+      linkCustom.addEventListener('touchend', () => {
+          linkCustom.classList.remove('linkCustomsactive');
+      });
+
+      linkCustom.addEventListener('touchmove', () => {
+          linkCustom.classList.remove('linkCustomsactive');
       });
   });
 });

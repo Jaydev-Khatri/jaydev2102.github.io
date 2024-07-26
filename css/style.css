@@ -178,6 +178,11 @@ img {
     transform: scale(1);
 }
 
+.link-custom:hover::after,
+.linkCustomsactive::after {
+    transform: scale(1);
+}
+
 /* CARD */
 .card-custom .card-custom-image {
     overflow: hidden;
