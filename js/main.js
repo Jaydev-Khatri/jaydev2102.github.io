@@ -1,3 +1,24 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll('.shadow-effect');
+
+  elements.forEach(element => {
+      // For touch devices, mimic hover effect
+      element.addEventListener('touchstart', () => {
+          element.classList.add('active');
+      });
+
+      element.addEventListener('touchend', () => {
+          element.classList.remove('active');
+      });
+
+      // Optional: Remove the effect if touch moves away from the element
+      element.addEventListener('touchmove', () => {
+          element.classList.remove('active');
+      });
+  });
+});
+
+
 AOS.init();
 // You can also pass an optional settings object
 // below listed default settings
