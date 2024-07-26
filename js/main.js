@@ -13,3 +13,7 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+document.querySelector('.shadow-effect').addEventListener('touchstart', function() {
+  this.classList.toggle('hover');
+});

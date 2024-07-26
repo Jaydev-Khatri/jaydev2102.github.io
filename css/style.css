@@ -88,6 +88,19 @@ img {
     }
 }
 
+.shadow-effect:focus,
+.shadow-effect:active {
+    box-shadow: 0 10px 15px -5px var(--color-brand),
+        3px 3px 0 0 var(--color-brand),
+        -3px 3px 0 0 var(--color-brand);
+}
+
+.shadow-effect.hover {
+    box-shadow: 0 10px 15px -5px var(--color-brand),
+        3px 3px 0 0 var(--color-brand),
+        -3px 3px 0 0 var(--color-brand);
+}
+
 .iconbox {
     width: 60px;
     height: 60px;
