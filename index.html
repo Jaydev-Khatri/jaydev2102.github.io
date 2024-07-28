@@ -1,392 +1,476 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <!-- Character encoding for the document -->
-  <meta charset="UTF-8">
+  <head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8" />
 
-  <!-- Viewport settings for responsive design -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
 
-  <!-- Page title -->
-  <title>Jaydev Khatri</title>
+    <!-- Page title -->
+    <title>Jaydev Khatri</title>
 
-  <!-- Meta description for SEO -->
-  <meta name="description"
-    content="Jaydev Khatri - Front-End Developer focusing on creating clean and responsive web designs.">
+    <!-- Meta description for SEO -->
+    <meta name="description"
+      content="Jaydev Khatri - Front-End Developer focusing on creating clean and responsive web designs." />
 
-  <!-- Keywords for SEO -->
-  <meta name="keywords"
-    content="Jaydev Khatri, front-end developer, web development, angular, typescript, scss, bootstrap, javascript, frontend">
+    <!-- Keywords for SEO -->
+    <meta name="keywords"
+      content="Jaydev Khatri, front-end developer, web development, angular, typescript, scss, bootstrap, javascript, frontend" />
 
-  <!-- Author of the page -->
-  <meta name="author" content="Jaydev Khatri">
+    <!-- Author of the page -->
+    <meta name="author" content="Jaydev Khatri" />
 
-  <!-- Robots meta tag to control search engine indexing -->
-  <meta name="robots" content="index, follow">
+    <!-- Robots meta tag to control search engine indexing -->
+    <meta name="robots" content="index, follow" />
 
-  <!-- Canonical link to avoid duplicate content issues -->
-  <link rel="canonical" href="https://jaydev2102.netlify.app/">
+    <!-- Canonical link to avoid duplicate content issues -->
+    <link rel="canonical" href="https://jaydev2102.netlify.app/" />
 
-  <!-- Preconnect/DNS Prefetch for faster resource fetching -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="preconnect" href="https://unpkg.com">
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-  <link rel="dns-prefetch" href="https://unpkg.com">
+    <!-- Preconnect/DNS Prefetch for faster resource fetching -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />
 
-  <!-- Stylesheets -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <meta name="google-adsense-account" content="ca-pub-6733236670718970">
+    <meta name="google-adsense-account" content="ca-pub-6733236670718970" />
 
-  <!-- Google Adsense (should be placed lower in the head or in the body for better page load performance) -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6733236670718970"
-    crossorigin="anonymous"></script>
+    <!-- Google Adsense (should be placed lower in the head or in the body for better page load performance) -->
+    <script async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6733236670718970"
+      crossorigin="anonymous"></script>
 
-  <!-- Open Graph meta tags for social media sharing -->
-  <meta property="og:title" content="Jaydev Khatri - Front-End Developer">
-  <meta property="og:description"
-    content="Jaydev Khatri is a Front-End Developer focused on creating clean and responsive web designs. Check out his projects and skills in web development and beyond.">
-  <meta property="og:image" content="./images/Cropped_Image.jpg">
-  <meta property="og:url" content="https://jaydev2102.netlify.app/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Jaydev Khatri">
-  <meta property="og:locale" content="en_US">
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Jaydev Khatri - Front-End Developer" />
+    <meta property="og:description"
+      content="Jaydev Khatri is a Front-End Developer focused on creating clean and responsive web designs. Check out his projects and skills in web development and beyond." />
+    <meta property="og:image" content="./images/Cropped_Image.jpg" />
+    <meta property="og:url" content="https://jaydev2102.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jaydev Khatri" />
+    <meta property="og:locale" content="en_US" />
 
-  <!-- Twitter Card meta tags for social media sharing -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@jd_9999">
-  <meta name="twitter:creator" content="@jd_9999">
-  <meta name="twitter:title" content="Jaydev Khatri - Front-End Developer">
-  <meta name="twitter:description"
-    content="Jaydev Khatri is a Front-End Developer focused on creating clean and responsive web designs. Check out his projects and skills in web development and beyond.">
-  <meta name="twitter:image" content="https://jaydev2102.netlify.app/images/Cropped_Image.jpg">
-  <meta name="twitter:url" content="https://jaydev2102.netlify.app/">
+    <!-- Twitter Card meta tags for social media sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@jd_9999" />
+    <meta name="twitter:creator" content="@jd_9999" />
+    <meta name="twitter:title" content="Jaydev Khatri - Front-End Developer" />
+    <meta name="twitter:description"
+      content="Jaydev Khatri is a Front-End Developer focused on creating clean and responsive web designs. Check out his projects and skills in web development and beyond." />
+    <meta name="twitter:image"
+      content="https://jaydev2102.netlify.app/images/Cropped_Image.jpg" />
+    <meta name="twitter:url" content="https://jaydev2102.netlify.app/" />
 
-  <!-- Apple touch icon for iOS devices -->
-  <link rel="apple-touch-icon" href="https://jaydev2102.netlify.app/images/jonathan-borba-Stj-ZzhAedQ-unsplashqq.png">
+    <!-- Apple touch icon for iOS devices -->
+    <link rel="apple-touch-icon"
+      href="https://jaydev2102.netlify.app/images/jonathan-borba-Stj-ZzhAedQ-unsplashqq.png" />
 
-  <!-- Favicon for the browser tab -->
-  <link rel="icon" href="./images/jonathan-borba-Stj-ZzhAedQ-unsplashqq.png" type="image/x-icon">
+    <!-- Favicon for the browser tab -->
+    <link rel="icon" href="./images/jonathan-borba-Stj-ZzhAedQ-unsplashqq.png"
+      type="image/x-icon" />
 
-  <!-- Application Name -->
-  <meta name="application-name" content="Jaydev Khatri Portfolio">
-</head>
+    <!-- Application Name -->
+    <meta name="application-name" content="Jaydev Khatri Portfolio" />
+  </head>
 
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container flex-lg-column">
+        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+          <span class="h3 fw-bold d-block d-lg-none">Jaydev Khatri</span>
+          <img src="images/Image_20240725_222352_590.jpeg" alt="Jaydev Khatri"
+            class="d-none d-lg-block rounded-4" />
+        </a>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar">
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container flex-lg-column">
-      <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
-        <span class="h3 fw-bold d-block d-lg-none"> Jaydev Khatri </span>
-        <img src="images/Image_20240725_222352_590.jpeg" class="d-none d-lg-block rounded-4">
-      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-          <li class="nav-item styled-link">
-            <a class="nav-link" href="#home">Home </a>
-          </li>
-          <li class="nav-item styled-link">
-            <a class="nav-link" href="#projects">Projects </a>
-          </li>
-          <li class="nav-item styled-link">
-            <a class="nav-link" href="#skills">Skills </a>
-          </li>
-          <li class="nav-item styled-link">
-            <a class="nav-link" href="#education">Education</a>
-          </li>
-          <li class="nav-item styled-link">
-            <a class="nav-link" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item styled-link">
-            <a class="nav-link" href="#contact-info">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <div id="content-box">
-    <section id="home" class="new_height-class px-lg-5 my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <h1 id="animate-heading" class="display-5 fw-bold">
-              <span class="word-animated">I'm</span>
-              <span class="word-animated text-brand">Jaydev</span>
-              <span class="word-animated text-brand">Khatri,</span>
-              <span class="word-animated">a</span>
-              <span class="word-animated">Front-End</span>
-              <span class="word-animated">Developer</span>
-              <span class="word-animated">focused</span>
-              <span class="word-animated">on</span>
-              <span class="word-animated">creating</span>
-              <span class="word-animated">clean,</span>
-              <span class="word-animated">responsive</span>
-              <span class="word-animated">web</span>
-              <span class="word-animated">designs</span>
-              <span class="word-animated">and</span>
-              <span class="word-animated">currently</span>
-              <span class="word-animated">learning</span>
-              <span class="word-animated">Back-End</span>
-              <span class="word-animated">development.</span>
-            </h1>
-            <p class="lead mt-2 mb-4 typing" data-aos="fade-up" data-aos-delay="300"> Let your light break through the
-              darkness and shine brightly &#10024;&#127775;</p>
-            <div data-aos="fade-up" data-aos-delay="600">
-              <a href="#projects" class="btn featured-btn me-3"> Check My Projects </a>
-            </div>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav ms-auto flex-lg-column fit-width mx-auto text-center">
+            <li class="nav-item styled-link ">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item styled-link ">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item styled-link ">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item styled-link ">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item styled-link ">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item styled-link ">
+              <a class="nav-link" href="#contact-info">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <section id="projects" class="new_height-class px-lg-5">
-      <div class="container">
-        <div class="row pb-4" data-aos="fade-up">
-          <div class="col-lg-8">
-            <h6 class="text-brand"> Projects </h6>
-            <h1>Projects that I have worked on</h1>
-          </div>
-        </div>
-        <div class="row pb-4 gy-4">
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service-item p-4 bg-base rounded-4 shadow-box">
-              <h5 class="mt-4 mb-2"> Meditation (PWA) </h5>
-              <p> Integrated GraphQL for efficient real-time data fetching and enhanced interactivity in the Meditation
-                PWA.</p>
-              <p>Meditation app works on Android and iOS, and easily install it on both devices for a relaxing
-                experience anytime, anywhere.</p>
-              <p> Frontend :- Angular, TypeScript, SCSS, RxJS </p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service-item p-4 bg-base rounded-4 shadow-box">
-              <h5 class="mt-4 mb-2"> Weather App Using JavaScript: </h5>
-              <p> Created a Weather App for websites using HTML, CSS, and JavaScript. </p>
-              <p>Utilized the OpenWeatherMap API to fetch real-time weather data</p>
-              <a href="https://github.com/Jaydev1999/weather-app" target="_blank" class="styled-link"> Github </a></br>
-            </div>
-          </div>
+    </nav>
 
-
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service-item p-4 bg-base rounded-4 shadow-box">
-              <h5 class="mt-4 mb-2"> Augmented Reality (AR) - Business Card </h5>
-              <p> Designed and implemented an innovative Augmented Reality (AR) business card using A-Frame, a web
-                framework for building virtual
-                reality experiences with HTML and JavaScript.
+    <div id="content-box">
+      <section id="home" class="new_height-class px-lg-5 my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10">
+              <h1 id="animate-heading" class="display-5 fw-bold">
+                <span class="word-animated">I'm</span>
+                <span class="word-animated text-brand">Jaydev</span>
+                <span class="word-animated text-brand">Khatri,</span>
+                <span class="word-animated">a</span>
+                <span class="word-animated">Front-End</span>
+                <span class="word-animated">Developer</span>
+                <span class="word-animated">focused</span>
+                <span class="word-animated">on</span>
+                <span class="word-animated">creating</span>
+                <span class="word-animated">clean,</span>
+                <span class="word-animated">responsive</span>
+                <span class="word-animated">web</span>
+                <span class="word-animated">designs</span>
+                <span class="word-animated">and</span>
+                <span class="word-animated">currently</span>
+                <span class="word-animated">learning</span>
+                <span class="word-animated">Back-End</span>
+                <span class="word-animated">development.</span>
+              </h1>
+              <p class="lead mt-2 mb-4 typing" data-aos="fade-up"
+                data-aos-delay="300">
+                Let your light break through the darkness and shine brightly
+                &#10024;&#127775;
               </p>
-              <p> Developed interactive and immersive AR content, seamlessly blending the physical business card with
-                digital elements using A-
-                Frame's capabilities. </p>
-              <a href="https://github.com/Jaydev1999/AR-Scanner-Business-Cards" target="_blank" class="styled-link">
-                Github </a></br>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="skills" class="new_height-class px-lg-5 my-5">
-      <div class="container">
-        <div class="row pb-4" data-aos="fade-up">
-          <div class="col-lg-8">
-            <h6 class="text-brand"> Skills </h6>
-          </div>
-        </div>
-        <div class="row pb-4 gy-4">
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service-item p-4 bg-base rounded-4 shadow-box">
-              <h5 class="mt-4 mb-2">Web Development</h5>
-              <p>Frontend: HTML, CSS, SCSS, JavaScript, TypeScript, Bootstrap, Tailwind, Postman</p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service-item p-4 bg-base rounded-4 shadow-box">
-              <h5 class="mt-4 mb-2">Frameworks & Libraries</h5>
-              <p>Frontend: Angular, Angular Material, RxJS, jQuery</p>
-              <p>Testing: Jest for unit testing, Cypress for end-to-end testing</p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service-item p-4 bg-base rounded-4 shadow-box">
-              <h5 class="mt-4 mb-2">Learning Backend</h5>
-              <p>Backend: Node.js, NestJS</p>
-              <p>API Technologies: GraphQL, REST APIs</p>
-              <p>Database: MySQL, MongoDB</p>
-            </div>
-          </div>
-        </div>
-        <div class="row pb-4 gy-4">
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service-item p-4 bg-base rounded-4 shadow-box">
-              <h5 class="mt-4 mb-2">Design Tools</h5>
-              <p>Figma</p>
-              <p>Canva</p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service-item p-4 bg-base rounded-4 shadow-box">
-              <h5 class="mt-4 mb-2">Source Control</h5>
-              <p>Git</p>
-              <p>GitHub</p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service-item p-4 bg-base rounded-4 shadow-box">
-              <h5 class="mt-4 mb-2">Software Architectures</h5>
-              <p>Model-View-Controller (MVC)</p>
-              <p>Microservices Architecture</p>
-            </div>
-          </div>
-        </div>
-        <div class="row pb-4 gy-4">
-
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service-item p-4 bg-base rounded-4 shadow-box">
-              <h5 class="mt-4 mb-2">Soft Skills</h5>
-              <p>Teamwork</p>
-              <p>Communication</p>
-              <p>Problem-solving</p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service-item p-4 bg-base rounded-4 shadow-box">
-              <h5 class="mt-4 mb-2">Methodologies</h5>
-              <p>Scrum (Daily Morning stand-ups)</p>
-              <p>Agile Methodology</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="education" class="new_height-class px-lg-5 my-5">
-      <div class="container">
-        <div class="row pb-4" data-aos="fade-up">
-          <div class="col-lg-8">
-            <h6 class="text-brand"> Education </h6>
-            <h1> Academic History</h1>
-          </div>
-        </div>
-        <div class="row pb-4" data-aos="fade-up">
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="600">
-            <div class="bg-base p-4 rounded-4 shadow-box">
-              <h4> Bachelor Computer Application (2024) </h4>
-              <p class="text-brand mb-2"> Surendranagar University</p>
-              (CGPA 7.94)
-            </div>
-          </div>
-          <div class="col-lg-12 my-3" data-aos="fade-up" data-aos-delay="600">
-            <div class="bg-base p-4 rounded-4 shadow-box">
-              <h4> Passed out Computer Engineering (2021) </h4>
-              <p class="text-brand mb-2"> C. U. Shah Polytechnic</p>
-              (CGPA 6.73)
-            </div>
-          </div>
-        </div>
-
-
-    </section>
-
-    <section id="experience" class="new_height-class px-lg-5 my-5">
-      <div class="container">
-        <div class="row pb-4" data-aos="fade-up">
-          <div class="col-lg-8">
-            <h1> Experience </h1>
-          </div>
-        </div>
-        <div class="row pb-4" data-aos="fade-up">
-          <div class="col-lg-12 " data-aos="fade-up" data-aos-delay="600">
-            <div class="bg-base p-4 rounded-4 shadow-box">
-              <h4> Web Developement <br class="d-block d-lg-none d-md-none d-sm-block"> Intern-Job <br
-                  class="d-block d-lg-none d-md-none d-sm-block"> (Jul 2022 - Present)
-              </h4>
-              <p class="text-brand mb-2"> AppUnik </p>
-              <p> • Maintained and enhanced web applications by coding new features and resolving bugs promptly to
-                ensure a smooth user experience, following Scrum methodology with daily morning stand-ups.
-              </p>
-              <p> • Implemented REST APIs and GraphQL, optimizing data exchange processes to boost application
-                performance.
-              </p>
-              <p> • Worked closely with UX/UI designers and backend developers to deliver well-integrated solutions,
-                ensuring alignment with project goals and effective cross-functional communication. </p>
-            </div>
-            <div class="col-lg-12 my-3" data-aos="fade-up" data-aos-delay="600">
-              <div class="bg-base p-4 rounded-4 shadow-box">
-                <h4> PHP Training <br class="d-block d-lg-none d-md-none d-sm-block"> (Jan 2018 - Feb 2018) </h4>
-                <p class="text-brand mb-2"> Gatistvam Technologies </p>
-                <p> • Learned the basics of writing and debugging simple PHP scripts for basic web functionalities. </p>
-                <p> • Gained experience with core PHP concepts like variables, functions, and basic control structures.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-12 my-3" data-aos="fade-up" data-aos-delay="600">
-              <div class="bg-base p-4 rounded-4 shadow-box">
-                <h4> Android Internship <br class="d-block d-lg-none d-md-none d-sm-block"> (Jun 2018 - Jun 2019) </h4>
-                <p class="text-brand mb-2"> Way to Web </p>
-                <p> • Completed an internship at Way to Web, focusing on Android app development.
-                </p>
-                <p> • I focused on designing the user interface and experience for a student attendance management
-                  project
-                  during this period.
-                </p>
-              </div>
-            </div>
-            <div class="row pb-4 my-3" data-aos="fade-up">
-              <div data-aos="fade-up" data-aos-delay="600">
-                <a href="./JD 3.pdf" class="btn featured-btn me-3" target="_blank"> Download my Resume
-
-                  <span class="m_a74036a mantine-Button-section" data-position="right"><svg
-                      xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="tabler-icon tabler-icon-download ">
-                      <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                      <path d="M7 11l5 5l5 -5"></path>
-                      <path d="M12 4l0 12"></path>
-                    </svg></span>
+              <div data-aos="fade-up" data-aos-delay="600"
+                class="d-flex justify-content-center d-md-block d-lg-block d-xl-block">
+                <a href="#projects" class="btn featured-btn me-3">
+                  Check My Projects
                 </a>
               </div>
             </div>
           </div>
-    </section>
-    <section id="contact-info" class="new_height-class px-lg-5 my-5">
-      <div class="container">
-        <div class="row pb-4" data-aos="fade-up">
-          <div class="col-lg-12">
-            <h6 class="text-brand">Let's Connect </h6>
-            <a href="mailto:jaydevkhatri78@gmail.com" class="styled-link"> E-Mail :- jaydevkhatri78@gmail.com </a> </br>
-            <a href="tel:+917069078777" class="styled-link"> Call :- +91 70690 78777</a> </br>
-            <a href="https://www.linkedin.com/in/jaydev-khatri007/" class="styled-link" target="_blank"> LinkedIn
-              (Preferred)</a>
+        </div>
+      </section>
+      <section id="projects" class="new_height-class px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">Projects</h6>
+              <h1>Projects that I have worked on</h1>
+            </div>
+          </div>
+          <div class="row pb-4 gy-4">
+            <div class="col-lg-12" data-aos="fade-up">
+              <div class="service-item p-4 bg-base rounded-4 shadow-box">
+                <h5 class="mt-4 mb-2">Meditation (PWA)</h5>
+                <p>
+                  Integrated GraphQL for efficient real-time data fetching and
+                  enhanced interactivity in the Meditation PWA.
+                </p>
+                <p>
+                  Meditation app works on Android and iOS, and easily install it
+                  on both devices for a relaxing experience anytime, anywhere.
+                </p>
+                <p>Frontend :- Angular, TypeScript, SCSS, RxJS</p>
+              </div>
+            </div>
+            <div class="col-lg-12" data-aos="fade-up">
+              <div class="service-item p-4 bg-base rounded-4 shadow-box">
+                <h5 class="mt-4 mb-2">Weather App Using JavaScript:</h5>
+                <p>
+                  Created a Weather App for websites using HTML, CSS, and
+                  JavaScript.
+                </p>
+                <p>
+                  Utilized the OpenWeatherMap API to fetch real-time weather
+                  data
+                </p>
+                <a href="https://github.com/Jaydev1999/weather-app"
+                  target="_blank" class="styled-link fit-width">
+                  Github </a><br />
+              </div>
+            </div>
+
+            <div class="col-lg-12" data-aos="fade-up">
+              <div class="service-item p-4 bg-base rounded-4 shadow-box">
+                <h5 class="mt-4 mb-2">
+                  Augmented Reality (AR) - Business Card
+                </h5>
+                <p>
+                  Designed and implemented an innovative Augmented Reality (AR)
+                  business card using A-Frame, a web framework for building
+                  virtual reality experiences with HTML and JavaScript.
+                </p>
+                <p>
+                  Developed interactive and immersive AR content, seamlessly
+                  blending the physical business card with digital elements
+                  using A- Frame's capabilities.
+                </p>
+                <a
+                  href="https://github.com/Jaydev1999/AR-Scanner-Business-Cards"
+                  target="_blank"
+                  class="styled-link fit-width">
+                  Github </a><br />
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+      <section id="skills" class="new_height-class px-lg-5 my-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">Skills</h6>
+            </div>
+          </div>
+          <div class="row pb-4 gy-4">
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service-item p-4 bg-base rounded-4 shadow-box">
+                <h5 class="mt-4 mb-2">Web Development</h5>
+                <p>
+                  Frontend: HTML, CSS, SCSS, JavaScript, TypeScript, Bootstrap,
+                  Tailwind, Postman
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service-item p-4 bg-base rounded-4 shadow-box">
+                <h5 class="mt-4 mb-2">Frameworks & Libraries</h5>
+                <p>Frontend: Angular, Angular Material, RxJS, jQuery</p>
+                <p>
+                  Testing: Jest for unit testing, Cypress for end-to-end testing
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service-item p-4 bg-base rounded-4 shadow-box">
+                <h5 class="mt-4 mb-2">Learning Backend</h5>
+                <p>Backend: Node.js, NestJS</p>
+                <p>API Technologies: GraphQL, REST APIs</p>
+                <p>Database: MySQL, MongoDB</p>
+              </div>
+            </div>
+          </div>
+          <div class="row pb-4 gy-4">
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service-item p-4 bg-base rounded-4 shadow-box">
+                <h5 class="mt-4 mb-2">Design Tools</h5>
+                <p>Figma</p>
+                <p>Canva</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service-item p-4 bg-base rounded-4 shadow-box">
+                <h5 class="mt-4 mb-2">Source Control</h5>
+                <p>Git</p>
+                <p>GitHub</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service-item p-4 bg-base rounded-4 shadow-box">
+                <h5 class="mt-4 mb-2">Software Architectures</h5>
+                <p>Model-View-Controller (MVC)</p>
+                <p>Microservices Architecture</p>
+              </div>
+            </div>
+          </div>
+          <div class="row pb-4 gy-4">
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service-item p-4 bg-base rounded-4 shadow-box">
+                <h5 class="mt-4 mb-2">Soft Skills</h5>
+                <p>Teamwork</p>
+                <p>Communication</p>
+                <p>Problem-solving</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service-item p-4 bg-base rounded-4 shadow-box">
+                <h5 class="mt-4 mb-2">Methodologies</h5>
+                <p>Scrum (Daily Morning stand-ups)</p>
+                <p>Agile Methodology</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="new_height-class px-lg-5 my-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">Education</h6>
+              <h1>Academic History</h1>
+            </div>
+          </div>
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="600">
+              <div class="bg-base p-4 rounded-4 shadow-box">
+                <h4>Bachelor Computer Application (2024)</h4>
+                <p class="text-brand mb-2">Surendranagar University</p>
+                (CGPA 7.94)
+              </div>
+            </div>
+            <div class="col-lg-12 my-3" data-aos="fade-up" data-aos-delay="600">
+              <div class="bg-base p-4 rounded-4 shadow-box">
+                <h4>Passed out Computer Engineering (2021)</h4>
+                <p class="text-brand mb-2">C. U. Shah Polytechnic</p>
+                (CGPA 6.73)
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="new_height-class px-lg-5 my-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h1>Experience</h1>
+            </div>
+          </div>
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="600">
+              <div class="bg-base p-4 rounded-4 shadow-box">
+                <h4>
+                  Web Developement
+                  <br class="d-block d-lg-none d-md-none d-sm-block" />
+                  Intern-Job
+                  <br class="d-block d-lg-none d-md-none d-sm-block" />
+                  (Jul 2022 - Present)
+                </h4>
+                <p class="text-brand mb-2">AppUnik</p>
+                <p>
+                  • Maintained and enhanced web applications by coding new
+                  features and resolving bugs promptly to ensure a smooth user
+                  experience, following Scrum methodology with daily morning
+                  stand-ups.
+                </p>
+                <p>
+                  • Implemented REST APIs and GraphQL, optimizing data exchange
+                  processes to boost application performance.
+                </p>
+                <p>
+                  • Worked closely with UX/UI designers and backend developers
+                  to deliver well-integrated solutions, ensuring alignment with
+                  project goals and effective cross-functional communication.
+                </p>
+              </div>
+              <div class="col-lg-12 my-3" data-aos="fade-up"
+                data-aos-delay="600">
+                <div class="bg-base p-4 rounded-4 shadow-box">
+                  <h4>
+                    PHP Training
+                    <br class="d-block d-lg-none d-md-none d-sm-block" />
+                    (Jan 2018 - Feb 2018)
+                  </h4>
+                  <p class="text-brand mb-2">Gatistvam Technologies</p>
+                  <p>
+                    • Learned the basics of writing and debugging simple PHP
+                    scripts for basic web functionalities.
+                  </p>
+                  <p>
+                    • Gained experience with core PHP concepts like variables,
+                    functions, and basic control structures.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-12 my-3" data-aos="fade-up"
+                data-aos-delay="600">
+                <div class="bg-base p-4 rounded-4 shadow-box">
+                  <h4>
+                    Android Internship
+                    <br class="d-block d-lg-none d-md-none d-sm-block" />
+                    (Jun 2018 - Jun 2019)
+                  </h4>
+                  <p class="text-brand mb-2">Way to Web</p>
+                  <p>
+                    • Completed an internship at Way to Web, focusing on Android
+                    app development.
+                  </p>
+                  <p>
+                    • I focused on designing the user interface and experience
+                    for a student attendance management project during this
+                    period.
+                  </p>
+                </div>
+              </div>
+              <div class="row pb-4 my-3" data-aos="fade-up">
+                <div data-aos="fade-up" data-aos-delay="600"
+                  class="d-flex justify-content-center d-md-block d-lg-block d-xl-block">
+                  <a href="./JD 3.pdf" class="btn featured-btn me-3"
+                    target="_blank">
+                    Download my Resume
+
+                    <span class="m_a74036a mantine-Button-section"
+                      data-position="right"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="20"
+                        height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        class="tabler-icon tabler-icon-download">
+                        <path
+                          d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+                        <path d="M7 11l5 5l5 -5"></path>
+                        <path d="M12 4l0 12"></path>
+                      </svg></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-info" class="new_height-class px-lg-5 my-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-12">
+              <h6 class="text-brand">Let's Connect</h6>
+              <a href="mailto:jaydevkhatri78@gmail.com" class="styled-link">
+                E-Mail :- jaydevkhatri78@gmail.com
+              </a>
+              <br />
+              <a href="tel:+917069078777" class="styled-link">
+                Call :- +91 70690 78777</a>
+              <br />
+              <a href="https://www.linkedin.com/in/jaydev-khatri007/"
+                class="styled-link" target="_blank">
+                LinkedIn (Preferred)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="owner-ship" class="text-center">
+        <div class="text-brand">Jaydev Khatri</div>
+
+        <p>
+          Copyright © 2024 Jaydev Khatri <span>|</span>
+          <span>All Rights Reserved</span>
+        </p>
       </div>
-    </section>
-    <div id="owner-ship" class="text-center">
-      <div class="text-brand">Jaydev Khatri</div>
-
-      <p>
-        Copyright © 2024 Jaydev Khatri <span>|</span> <span>All Rights Reserved</span></p>
     </div>
-  </div>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 
 </html>
